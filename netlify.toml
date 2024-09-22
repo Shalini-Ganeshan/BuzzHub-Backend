@@ -1,7 +1,0 @@
-[build]
-  functions = "functions"
-  command = "npm run build" # or your build command
-  publish = "your-publish-directory" # typically `dist` or `public`
-
-[functions]
-  node_bundler = "esbuild" # optional: use esbuild for faster builds
