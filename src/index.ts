@@ -70,14 +70,10 @@ const main = async () => {
   await server.start();
 
   // CORS configuration
-  const corsOptions = {
-    origin: [
-      "https://buzzhub-by-shalini.netlify.app",
-      "http://localhost:3000",
-    ], // Allow your client URL
-    credentials: true,
-  };
-
+const corsOptions = {
+  origin: "*", 
+  credentials: true,
+};
   // Use CORS middleware before the GraphQL middleware
   app.use(cors(corsOptions));
   app.use(
