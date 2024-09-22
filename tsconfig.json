@@ -1,8 +1,12 @@
 {
-    "compilerOptions": {
-      "typeRoots": ["./node_modules/@types", "./src/types"],
-      "esModuleInterop": true,
-      "module": "commonjs",  // Ensure this is set for Node.js
-    }
-  }
-  
+  "compilerOptions": {
+    "outDir": "./dist", // Directory where compiled files will be saved
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "esModuleInterop": true,
+    "module": "commonjs",  // Ensure this is set for Node.js
+    "target": "es6",       // Specify ECMAScript target version
+    
+  },
+  "include": ["src/**/*"],   // Include all files in the 'src' folder
+  "exclude": ["node_modules"] // Exclude node_modules from the compilation
+}
